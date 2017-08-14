@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 OneSet oneSet1=OneSet.findById(OneSet.class,30);
                 List<OneSet> oneSets=OneSet.listAll(OneSet.class);
                 textView.setText(String.valueOf(oneSet1.getRecord()));
-                Toast.makeText(MainActivity.this, ""+oneSets.size(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Size :"+oneSets.size(), Toast.LENGTH_SHORT).show();
             }
         });
 
