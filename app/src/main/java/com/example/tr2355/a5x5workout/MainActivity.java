@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         workout2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 Toast.makeText(MainActivity.this, "Workout Recorded Successfully", Toast.LENGTH_SHORT).show();
                 Sets = OneSet.listAll(OneSet.class);
                 squatO = Sets.get(0);
@@ -97,6 +98,15 @@ public class MainActivity extends AppCompatActivity {
                 fillTheGUI(squatO.record,Sets.get(1).record,Sets.get(2).record,overHeadPressO.record,deadLiftO.record);
 
 
+=======
+                OneSet oneSet= new OneSet(i);
+                oneSet.save();
+                i++;
+                OneSet oneSet1=OneSet.findById(OneSet.class,30);
+                List<OneSet> oneSets=OneSet.listAll(OneSet.class);
+                textView.setText(String.valueOf(oneSet1.getRecord()));
+                Toast.makeText(MainActivity.this, "Size :"+oneSets.size(), Toast.LENGTH_SHORT).show();
+>>>>>>> ddd1b390e852b444fb254b9ee8fcc45add3e3bd4
             }
         });
 
