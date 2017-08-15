@@ -8,21 +8,12 @@ import com.orm.SugarRecord;
 
 public class OneSet extends SugarRecord {
 
-    int record;
+    double record;
 
     public OneSet() {
     }
 
-    public int getRecord() {
-
-        return record;
-    }
-
-    public void setRecord(int record) {
-        this.record = record;
-    }
-
-    public OneSet(int record) {
+    public OneSet(double record) {
 
         this.record = record;
     }
