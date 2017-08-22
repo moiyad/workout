@@ -4,379 +4,549 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/jore"
+    android:scaleType = "centerCrop"
     tools:context="com.example.tr2355.a5x5workout.MainActivity">
 
-    <LinearLayout
-        android:layout_width="370dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="59dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="0.01"
-            app:srcCompat="@drawable/workout_2" />
-
-        <TextView
-            android:id="@+id/squatL"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.10"
-            android:paddingLeft="30dp"
-            android:paddingTop="25dp"
-            android:text="0" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.14"
-            android:adjustViewBounds="true"
-            app:srcCompat="@drawable/bar1" />
-
-        <TextView
-            android:id="@+id/squatR"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="25dp"
-            android:text="0" />
-
-    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="111dp"
-        android:id="@+id/workout2"
-        android:layout_height="70dp"
+        android:layout_width="367dp"
+        android:layout_height="165dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.763">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Squat" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Overhead Press" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Deadlift" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/submitB"
-        android:layout_width="112dp"
-        android:layout_height="39dp"
-        android:text="Submit"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.907"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        tools:layout_editor_absoluteY="423dp" />
-
-    <Button
-        android:id="@+id/new_PlanB"
-        android:layout_width="85dp"
-        android:layout_height="27dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="new Plan"
-        android:textSize="7dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintHorizontal_bias="0.0"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        tools:layout_editor_absoluteY="476dp" />
-
-    <Button
-        android:id="@+id/customB"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Custom"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintHorizontal_bias="0.973"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
-
-    <LinearLayout
-        android:layout_width="111dp"
-        android:layout_height="70dp"
-        android:id="@+id/workout1"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.968"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Squat" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Bench Press" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Barbell Row" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="370dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        android:weightSum="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52">
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteY="338dp">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="50dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            app:srcCompat="@drawable/workout_4" />
+            android:layout_marginLeft="7dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="375dp">
 
-        <TextView
-            android:id="@+id/deadLiftL"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.10"
-            android:paddingLeft="30dp"
-            android:paddingTop="25dp"
-            android:text="0" />
+            <LinearLayout
+                android:id="@+id/workout2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.56"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.763">
 
-        <ImageView
-            android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Squat"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Overhead Press"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Deadlift"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workout1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.56"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.968"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.764">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Squat"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Bench Press"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Barbell Row"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.14"
-            android:adjustViewBounds="true"
-            app:srcCompat="@drawable/bar1" />
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="454dp">
 
-        <TextView
-            android:id="@+id/deadLiftR"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="25dp"
-            android:text="0" />
+            <Button
+                android:id="@+id/new_PlanB"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="new Plan"
+                android:textSize="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/customB"
+                style="@android:style/Widget.DeviceDefault.ProgressBar.Large"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="Custom"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.973"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="370dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
+        android:layout_width="375dp"
+        android:layout_height="329dp"
+        android:orientation="vertical"
         android:weightSum="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395">
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp">
 
-        <ImageView
-            android:layout_width="59dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="0.02"
-            app:srcCompat="@drawable/workout_3" />
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.07"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.017">
 
-        <TextView
-            android:id="@+id/overHeadPressL"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.10"
-            android:paddingLeft="30dp"
-            android:paddingTop="25dp"
-            android:text="0" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.01"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/workout_2" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.14"
-            android:adjustViewBounds="true"
-            app:srcCompat="@drawable/bar1" />
+            <TextView
+                android:id="@+id/squatL"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.31"
+                android:paddingLeft="15dp"
+                android:paddingTop="25dp"
+                android:text="0"
+                android:textColor="@android:color/white" />
 
-        <TextView
-            android:id="@+id/overHeadPressR"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="25dp"
-            android:text="0" />
+            <ImageView
+                android:layout_width="101dp"
+                android:layout_height="41dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/bar1" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/squatR"
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingTop="25dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:layout_weight="0.60" />
 
-    <LinearLayout
-        android:layout_width="370dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.267">
+            <LinearLayout
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="59dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="0.02"
-            app:srcCompat="@drawable/workout" />
+                <TextView
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="23dp"
+                    android:text="Total"
+                    android:textColor="@android:color/white" />
 
-        <TextView
-            android:id="@+id/barBellRowL"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.10"
-            android:paddingLeft="30dp"
-            android:paddingTop="25dp"
-            android:text="0" />
+                <TextView
+                    android:id="@+id/squatTotal"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="5dp"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.14"
-            android:adjustViewBounds="true"
-            app:srcCompat="@drawable/bar1" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/barBellRowR"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="25dp"
-            android:text="0" />
+        </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.07"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.142">
 
-    <LinearLayout
-        android:layout_width="370dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142">
+            <ImageView
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.02"
+                android:scaleType="centerCrop"
 
-        <ImageView
-            android:layout_width="59dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="0.02"
-            app:srcCompat="@drawable/workout_5" />
+                app:srcCompat="@drawable/workout_5" />
 
-        <TextView
-            android:id="@+id/benchPressL"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.10"
-            android:paddingLeft="30dp"
-            android:paddingTop="25dp"
-            android:text="0" />
+            <TextView
+                android:id="@+id/benchPressL"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.31"
+                android:paddingLeft="15dp"
+                android:paddingTop="25dp"
+                android:text="0"
+                android:textColor="@android:color/white" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.14"
-            android:adjustViewBounds="true"
-            app:srcCompat="@drawable/bar1" />
+            <ImageView
+                android:layout_width="101dp"
+                android:layout_height="41dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/bar1" />
 
-        <TextView
-            android:id="@+id/benchPressR"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="25dp"
-            android:text="0" />
+            <TextView
+                android:id="@+id/benchPressR"
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingTop="25dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:layout_weight="0.60" />
+
+            <LinearLayout
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/benchPressTotal"
+                    android:layout_width="116dp"
+                    android:layout_height="44dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="15dp"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.07"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.267">
+
+            <ImageView
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.02"
+
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/workout" />
+
+            <TextView
+                android:id="@+id/barBellRowL"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.31"
+                android:paddingLeft="15dp"
+                android:paddingTop="25dp"
+                android:text="0"
+                android:textColor="@android:color/white" />
+
+
+            <ImageView
+                android:layout_width="101dp"
+                android:layout_height="41dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/bar1" />
+
+            <TextView
+                android:id="@+id/barBellRowR"
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingTop="25dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:layout_weight="0.60" />
+
+            <LinearLayout
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/barBellRowTotal"
+                    android:layout_width="116dp"
+                    android:layout_height="44dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="15dp"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.07"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.395">
+
+            <ImageView
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.02"
+                android:scaleType="centerCrop"
+
+                app:srcCompat="@drawable/workout_3" />
+
+            <TextView
+                android:id="@+id/overHeadPressL"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.31"
+                android:paddingLeft="15dp"
+                android:paddingTop="25dp"
+                android:text="0"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="101dp"
+                android:layout_height="41dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/bar1" />
+
+            <TextView
+                android:id="@+id/overHeadPressR"
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingTop="25dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:layout_weight="0.60" />
+
+            <LinearLayout
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/overHeadPressTotal"
+                    android:layout_width="116dp"
+                    android:layout_height="44dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="15dp"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.09"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:scaleType="centerCrop"
+
+                app:srcCompat="@drawable/workout_4" />
+
+            <TextView
+                android:id="@+id/deadLiftL"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.31"
+                android:paddingLeft="15dp"
+                android:paddingTop="25dp"
+                android:text="0"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="41dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/bar1" />
+
+            <TextView
+                android:id="@+id/deadLiftR"
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingTop="25dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:layout_weight="0.60" />
+
+            <LinearLayout
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/deadLiftTotal"
+                    android:layout_width="116dp"
+                    android:layout_height="44dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="15dp"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
